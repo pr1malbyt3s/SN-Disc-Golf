@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Disc" max_length="40" name="x_snc_disc_golf_disc" type="collection">
+        <element label="Disc Name" mandatory="true" max_length="40" name="disc_name" type="integer"/>
+        <element attributes="omit_sys_original=true" label="Disc Price" mandatory="true" max_length="20" name="disc_price" type="currency"/>
+    </element>
+</database>

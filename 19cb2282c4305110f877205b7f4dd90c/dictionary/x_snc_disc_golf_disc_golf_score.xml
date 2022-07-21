@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Disc Golf Score" max_length="40" name="x_snc_disc_golf_disc_golf_score" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Course" mandatory="true" max_length="60" name="course" type="string"/>
+        <element attributes="encode_utf8=false" label="Disc Golfer" max_length="32" name="disc_golfer" reference="x_snc_disc_golf_disc_golfer" type="reference"/>
+        <element label="Score" mandatory="true" max_length="40" name="score" type="integer"/>
+        <index name="index">
+            <element name="disc_golfer"/>
+        </index>
+    </element>
+</database>
