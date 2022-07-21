@@ -17,7 +17,7 @@
         <delete_roles/>
         <dependent/>
         <dependent_on_field/>
-        <display>false</display>
+        <display>true</display>
         <dynamic_creation>false</dynamic_creation>
         <dynamic_creation_script/>
         <dynamic_default_value/>
@@ -28,7 +28,7 @@
         <function_definition/>
         <function_field>false</function_field>
         <internal_type display_value="Reference">reference</internal_type>
-        <mandatory>false</mandatory>
+        <mandatory>true</mandatory>
         <max_length>32</max_length>
         <name>x_snc_disc_golf_disc_golf_score</name>
         <next_element/>
@@ -49,14 +49,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-07-21 16:28:03</sys_created_on>
         <sys_id>68bdeec2c4305110f877205b7f4dd94d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Disc Golfer</sys_name>
         <sys_package display_value="Disc Golf" source="x_snc_disc_golf">19cb2282c4305110f877205b7f4dd90c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Disc Golf">19cb2282c4305110f877205b7f4dd90c</sys_scope>
         <sys_update_name>sys_dictionary_x_snc_disc_golf_disc_golf_score_disc_golfer</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-07-21 16:28:03</sys_updated_on>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2022-07-21 19:49:41</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
