@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
     <sys_security_acl_role action="INSERT_OR_UPDATE">
         <sys_class_name>sys_security_acl_role</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-07-21 16:28:04</sys_created_on>
-        <sys_id>38bdeec2c4305110f877205b7f4dd9ad</sys_id>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2022-07-25 18:59:42</sys_created_on>
+        <sys_id>e4b6ffdfd1385110f8778333954efe4e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_snc_disc_golf_disc_golf_score.x_snc_disc_golf.dg_user</sys_name>
+        <sys_name>x_snc_disc_golf_disc_golf_score.score.x_snc_disc_golf.dg_user</sys_name>
         <sys_package display_value="Disc Golf" source="x_snc_disc_golf">19cb2282c4305110f877205b7f4dd90c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Disc Golf">19cb2282c4305110f877205b7f4dd90c</sys_scope>
-        <sys_security_acl display_value="x_snc_disc_golf_disc_golf_score">b4bdeec2c4305110f877205b7f4dd9ab</sys_security_acl>
-        <sys_update_name>sys_security_acl_role_38bdeec2c4305110f877205b7f4dd9ad</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-07-21 16:28:04</sys_updated_on>
+        <sys_security_acl display_value="x_snc_disc_golf_disc_golf_score.score">150d6f57d1385110f8778333954efe96</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_e4b6ffdfd1385110f8778333954efe4e</sys_update_name>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2022-07-25 18:59:42</sys_updated_on>
         <sys_user_role display_value="x_snc_disc_golf.dg_user" name="x_snc_disc_golf.dg_user">1edba242c4305110f877205b7f4dd98c</sys_user_role>
         <transaction_id/>
     </sys_security_acl_role>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_processor">
+    <sys_processor action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <description>Example Vulnerable Processor</description>
+        <interactive>false</interactive>
+        <name>DiscGolfVulnProcessor</name>
+        <parameters/>
+        <params_endpoint/>
+        <path>dgvulnprocessor</path>
+        <path_endpoint>x_snc_disc_golf_dgvulnprocessor</path_endpoint>
+        <require_csrf>false</require_csrf>
+        <roles/>
+        <script><![CDATA[(function process(g_request, g_response, g_processor) {
+
+	// Add your code here
+	var operation = g_request.getParameter("operation") || "read";
+    var sys_id = g_request.getParameter("sys_id");
+    var column = g_request.getParameter("column") || "body";
+    var value = g_request.getParameter("value") || "";
+
+    g_response.setContentType("text/html;charset=UTF-8");
+
+    var gr = new GlideRecord("x_snc_disc_golf_disc_golf_score");
+
+    if(gr.get(sys_id)) {
+        if(operation == "read") {
+            g_processor.writeOutput("Requested value: " + gr.getValue(column));
+        }
+        else if(operation == "update") {
+            gr.setValue(column, value);
+            g_processor.writeOutput(column + " has been updated to "+ gr.getValue(column));
+        }
+    }
+    else {
+        g_processor.writeOutput("Cannot process this request");
+    }
+
+})(g_request, g_response, g_processor);]]></script>
+        <sys_class_name>sys_processor</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2022-07-21 20:32:13</sys_created_on>
+        <sys_id>f425efc6c4f05110f877205b7f4dd997</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>DiscGolfVulnProcessor</sys_name>
+        <sys_package display_value="Disc Golf" source="x_snc_disc_golf">19cb2282c4305110f877205b7f4dd90c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Disc Golf">19cb2282c4305110f877205b7f4dd90c</sys_scope>
+        <sys_update_name>sys_processor_f425efc6c4f05110f877205b7f4dd997</sys_update_name>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2022-07-21 21:00:32</sys_updated_on>
+        <type>script</type>
+        <xframe_sameorigin>false</xframe_sameorigin>
+    </sys_processor>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Disc Golf">19cb2282c4305110f877205b7f4dd90c</application>
+        <file_path/>
+        <instance_id>da0614f93c301110bffab3f238218b13</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>sys_processor_f425efc6c4f05110f877205b7f4dd997</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_processor"&gt;&lt;sys_processor action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;description&gt;Example Vulnerable Processor&lt;/description&gt;&lt;interactive&gt;false&lt;/interactive&gt;&lt;name&gt;DiscGolfVulnProcessor&lt;/name&gt;&lt;parameters/&gt;&lt;params_endpoint/&gt;&lt;path&gt;dgvulnprocessor&lt;/path&gt;&lt;path_endpoint&gt;x_snc_disc_golf_dgvulnprocessor&lt;/path_endpoint&gt;&lt;require_csrf&gt;false&lt;/require_csrf&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function process(g_request, g_response, g_processor) {
+
+	// Add your code here
+	var operation = g_request.getParameter("operation") || "read";
+    var sys_id = g_request.getParameter("sys_id");
+    var column = g_request.getParameter("column") || "body";
+    var value = g_request.getParameter("value") || "";
+
+    g_response.setContentType("text/html;charset=UTF-8");
+
+    var gr = new GlideRecord("x_snc_disc_golf_disc_golf_score");
+
+    if(gr.get(sys_id)) {
+        if(operation == "read") {
+            g_processor.writeOutput("Requested value: " + gr.getValue(column));
+        }
+        else if(operation == "update") {
+            gr.setValue(column, value);
+            g_processor.writeOutput(column + " has been updated to "+ gr.getValue(column));
+        }
+    }
+    else {
+        g_processor.writeOutput("Cannot process this request");
+    }
+
+})(g_request, g_response, g_processor);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_processor&lt;/sys_class_name&gt;&lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-07-21 20:32:13&lt;/sys_created_on&gt;&lt;sys_id&gt;f425efc6c4f05110f877205b7f4dd997&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;DiscGolfVulnProcessor&lt;/sys_name&gt;&lt;sys_package display_value="Disc Golf" source="x_snc_disc_golf"&gt;19cb2282c4305110f877205b7f4dd90c&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Disc Golf"&gt;19cb2282c4305110f877205b7f4dd90c&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_processor_f425efc6c4f05110f877205b7f4dd997&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-07-21 21:00:32&lt;/sys_updated_on&gt;&lt;type&gt;script&lt;/type&gt;&lt;xframe_sameorigin&gt;false&lt;/xframe_sameorigin&gt;&lt;/sys_processor&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>814247850</payload_hash>
+        <record_name>DiscGolfVulnProcessor</record_name>
+        <reverted_from/>
+        <source>169117c2c4b05110f877205b7f4dd9ec</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2022-07-21 21:00:32</sys_created_on>
+        <sys_id>c01c2f8ec4f05110f877205b7f4dd905</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>182228fe87b0000001</sys_recorded_at>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2022-07-21 21:00:32</sys_updated_on>
+        <type>Processor</type>
+        <update_guid>0c1c2f8e0ef051104ffd716f73494204</update_guid>
+        <update_guid_history>0c1c2f8e0ef051104ffd716f73494204:814247850,7c8baf4ef4f05110567e4abc64105bf2:-1864727934,89e9e70e44f05110099303e3826d2e04:747336322,5195670aeaf05110372def856d77c4f1:798298274</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2022-07-21 21:02:39</sys_created_on>
+        <sys_db_object display_value="" name="sys_processor">sys_processor</sys_db_object>
+        <sys_id>21aa26f74da64e3eb6d1052c56530839</sys_id>
+        <sys_metadata>f425efc6c4f05110f877205b7f4dd997</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DiscGolfVulnProcessor</sys_name>
+        <sys_package display_value="Disc Golf" source="x_snc_disc_golf">19cb2282c4305110f877205b7f4dd90c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Disc Golf">19cb2282c4305110f877205b7f4dd90c</sys_scope>
+        <sys_scope_delete display_value="">0edb4982225044ce819160a8689e1d44</sys_scope_delete>
+        <sys_update_name>sys_processor_f425efc6c4f05110f877205b7f4dd997</sys_update_name>
+        <sys_update_version display_value="sys_processor_f425efc6c4f05110f877205b7f4dd997">c01c2f8ec4f05110f877205b7f4dd905</sys_update_version>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2022-07-21 21:02:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
