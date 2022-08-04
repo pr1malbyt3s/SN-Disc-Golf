@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2022-07-25 18:16:59</sys_created_on>
+        <sys_id>fdac2317d1385110f8778333954efe63</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.x_snc_disc_golf.dg_user</sys_name>
+        <sys_package display_value="Disc Golf" source="x_snc_disc_golf">19cb2282c4305110f877205b7f4dd90c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Disc Golf">19cb2282c4305110f877205b7f4dd90c</sys_scope>
+        <sys_security_acl display_value="">11ace757d1385110f8778333954efe34</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_fdac2317d1385110f8778333954efe63</sys_update_name>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2022-07-25 18:16:59</sys_updated_on>
+        <sys_user_role display_value="x_snc_disc_golf.dg_user" name="x_snc_disc_golf.dg_user">1edba242c4305110f877205b7f4dd98c</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Disc Golf">19cb2282c4305110f877205b7f4dd90c</application>
+        <file_path/>
+        <instance_id>da0614f93c301110bffab3f238218b13</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>sys_security_acl_role_fdac2317d1385110f8778333954efe63</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>maint</sys_created_by><sys_created_on>2022-07-25 18:16:59</sys_created_on><sys_id>fdac2317d1385110f8778333954efe63</sys_id><sys_mod_count>0</sys_mod_count><sys_name>.x_snc_disc_golf.dg_user</sys_name><sys_package display_value="Disc Golf" source="x_snc_disc_golf">19cb2282c4305110f877205b7f4dd90c</sys_package><sys_policy/><sys_scope display_value="Disc Golf">19cb2282c4305110f877205b7f4dd90c</sys_scope><sys_security_acl display_value="">11ace757d1385110f8778333954efe34</sys_security_acl><sys_update_name>sys_security_acl_role_fdac2317d1385110f8778333954efe63</sys_update_name><sys_updated_by>maint</sys_updated_by><sys_updated_on>2022-07-25 18:16:59</sys_updated_on><sys_user_role display_value="x_snc_disc_golf.dg_user" name="x_snc_disc_golf.dg_user">1edba242c4305110f877205b7f4dd98c</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-1550320747</payload_hash>
+        <record_name>.x_snc_disc_golf.dg_user</record_name>
+        <reverted_from/>
+        <source>169117c2c4b05110f877205b7f4dd9ec</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2022-07-25 18:16:59</sys_created_on>
+        <sys_id>9ffc2f57d1385110f8778333954efe4d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18236939ca10000001</sys_recorded_at>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2022-07-25 18:16:59</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>d7fc2f57ba38511056af886ccd5d9f4d</update_guid>
+        <update_guid_history>d7fc2f57ba38511056af886ccd5d9f4d:-1550320747</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value=".x_snc_disc_golf.dg_user">d6243b1fd1385110f8778333954efe3c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2022-07-25 18:48:20</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>0899d90444dd4a5a8feaeb4911e12ee9</sys_id>
+        <sys_metadata>fdac2317d1385110f8778333954efe63</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.x_snc_disc_golf.dg_user</sys_name>
+        <sys_package display_value="Disc Golf" source="x_snc_disc_golf">19cb2282c4305110f877205b7f4dd90c</sys_package>
+        <sys_parent display_value="x_snc_disc_golf_disc_golf_score.course">11ace757d1385110f8778333954efe34</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Disc Golf">19cb2282c4305110f877205b7f4dd90c</sys_scope>
+        <sys_scope_delete display_value="">0edb4982225044ce819160a8689e1d44</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_fdac2317d1385110f8778333954efe63</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_fdac2317d1385110f8778333954efe63">9ffc2f57d1385110f8778333954efe4d</sys_update_version>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2022-07-25 18:48:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

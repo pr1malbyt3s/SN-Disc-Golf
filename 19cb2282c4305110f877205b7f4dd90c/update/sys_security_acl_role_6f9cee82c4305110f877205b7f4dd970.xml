@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-21 16:23:20</sys_created_on>
+        <sys_id>6f9cee82c4305110f877205b7f4dd970</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_disc_golf_disc_golfer.x_snc_disc_golf.dg_admin</sys_name>
+        <sys_package display_value="Disc Golf" source="x_snc_disc_golf">19cb2282c4305110f877205b7f4dd90c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Disc Golf">19cb2282c4305110f877205b7f4dd90c</sys_scope>
+        <sys_security_acl display_value="x_snc_disc_golf_disc_golfer">eb9cea42c4305110f877205b7f4dd91e</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_6f9cee82c4305110f877205b7f4dd970</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-21 16:23:20</sys_updated_on>
+        <sys_user_role display_value="x_snc_disc_golf.dg_admin" name="x_snc_disc_golf.dg_admin">d6db2ecec4fc1110f877205b7f4dd908</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

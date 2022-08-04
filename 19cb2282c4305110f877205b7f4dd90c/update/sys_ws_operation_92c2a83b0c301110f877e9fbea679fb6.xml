@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>aaec92c40c455110f877e9fbea679f8b</enforce_acl>
+        <http_method>GET</http_method>
+        <name>Get Score</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    var scoreId = request.pathParams.score_sys_id;
+	var body = {};
+	var score = new GlideRecord('x_snc_disc_golf_disc_golf_score');
+	score.addQuery('sys_id', scoreId);
+	score.query();
+	if(score.next()) {
+		body.disc_golfer = score.getDisplayValue('disc_golfer');
+		body.score = score.getDisplayValue('score');
+		body.course = score.getDisplayValue('course');
+	}
+	
+	response.setContentType('application/JSON');
+	var writer = response.getStreamWriter();
+	writer.writeString(JSON.stringify(body));
+	
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_snc_disc_golf/disc_golf/score/{score_sys_id}</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/score/{score_sys_id}</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2022-07-26 16:58:40</sys_created_on>
+        <sys_id>92c2a83b0c301110f877e9fbea679fb6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Get Score</sys_name>
+        <sys_package display_value="Disc Golf" source="x_snc_disc_golf">19cb2282c4305110f877205b7f4dd90c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Disc Golf">19cb2282c4305110f877205b7f4dd90c</sys_scope>
+        <sys_update_name>sys_ws_operation_92c2a83b0c301110f877e9fbea679fb6</sys_update_name>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2022-07-27 20:25:14</sys_updated_on>
+        <web_service_definition display_value="Disc Golf">5282e0f70c301110f877e9fbea679fb5</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

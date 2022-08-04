@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Disc Golfer" max_length="40" name="x_snc_disc_golf_disc_golfer" sizeclass="2" type="collection">
+        <element attributes="edge_encryption_enabled=true" display="true" label="Disc Golfer" mandatory="true" max_length="40" name="disc_golfer" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Rating" mandatory="true" max_length="40" name="rating" type="integer"/>
+    </element>
+</database>

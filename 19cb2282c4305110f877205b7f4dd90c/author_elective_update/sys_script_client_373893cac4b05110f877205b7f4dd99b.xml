@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>false</global>
+        <isolate_script>false</isolate_script>
+        <messages/>
+        <name>Auto Set Disc Golfer</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+   if(g_form.isNewRecord())
+		g_form.setValue('disc_golfer', g_user.userID);
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2022-07-21 19:39:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>373893cac4b05110f877205b7f4dd99b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Auto Set Disc Golfer</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Disc Golf" source="x_snc_disc_golf">19cb2282c4305110f877205b7f4dd90c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Disc Golf">19cb2282c4305110f877205b7f4dd90c</sys_scope>
+        <sys_update_name>sys_script_client_373893cac4b05110f877205b7f4dd99b</sys_update_name>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2022-07-21 19:50:10</sys_updated_on>
+        <table>x_snc_disc_golf_disc_golf_score</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Disc Golf">19cb2282c4305110f877205b7f4dd90c</application>
+        <file_path/>
+        <instance_id>da0614f93c301110bffab3f238218b13</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>sys_script_client_373893cac4b05110f877205b7f4dd99b</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;false&lt;/global&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Auto Set Disc Golfer&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+   if(g_form.isNewRecord())
+		g_form.setValue('disc_golfer', g_user.userID);
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-07-21 19:39:41&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;373893cac4b05110f877205b7f4dd99b&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;Auto Set Disc Golfer&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Disc Golf" source="x_snc_disc_golf"&gt;19cb2282c4305110f877205b7f4dd90c&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Disc Golf"&gt;19cb2282c4305110f877205b7f4dd90c&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_373893cac4b05110f877205b7f4dd99b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-07-21 19:50:10&lt;/sys_updated_on&gt;&lt;table&gt;x_snc_disc_golf_disc_golf_score&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1926218210</payload_hash>
+        <record_name>Auto Set Disc Golfer</record_name>
+        <reverted_from/>
+        <source>169117c2c4b05110f877205b7f4dd9ec</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2022-07-21 19:50:10</sys_created_on>
+        <sys_id>d1fb1b8ec4b05110f877205b7f4dd96a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>182224f7a410000001</sys_recorded_at>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2022-07-21 19:50:10</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>1dfb1b8eb6b051108b16c83517c9ab69</update_guid>
+        <update_guid_history>1dfb1b8eb6b051108b16c83517c9ab69:1926218210,8e5bd38e09b051106f058e6d2ce65b78:1650748421,772a1b0e37b05110d15b0c229176cb80:-1185081607,ff89570eafb0511011e2306d8cc3c81b:-1594916723</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2022-07-21 20:29:24</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>37083243818d481da9a3cf7d8bfeab91</sys_id>
+        <sys_metadata>373893cac4b05110f877205b7f4dd99b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Auto Set Disc Golfer</sys_name>
+        <sys_package display_value="Disc Golf" source="x_snc_disc_golf">19cb2282c4305110f877205b7f4dd90c</sys_package>
+        <sys_parent display_value="Disc Golf Score">9cbdeec2c4305110f877205b7f4dd92e</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Disc Golf">19cb2282c4305110f877205b7f4dd90c</sys_scope>
+        <sys_scope_delete display_value="">0edb4982225044ce819160a8689e1d44</sys_scope_delete>
+        <sys_update_name>sys_script_client_373893cac4b05110f877205b7f4dd99b</sys_update_name>
+        <sys_update_version display_value="sys_script_client_373893cac4b05110f877205b7f4dd99b">d1fb1b8ec4b05110f877205b7f4dd96a</sys_update_version>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2022-07-21 20:29:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
