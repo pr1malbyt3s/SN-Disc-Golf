@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_graphql_resolver">
+    <sys_graphql_resolver action="INSERT_OR_UPDATE">
+        <name>Score Resolver</name>
+        <schema display_value="Disc Golf">aa8dfbb6d9055110f87742f733a0b3ec</schema>
+        <script><![CDATA[(function process(/*ResolverEnvironment*/ env) {
+	var sysId = env.getArguments().sys_id;
+	
+	// Anyone who can call the GraphQL API can read the record data!
+    var gr = new GlideRecord('x_snc_disc_golf_disc_golf_score');
+	if(gr.get(sysId) && gs.getUser().hasRole('x_snc_disc_golf.dg_admin')) {
+		return {
+		sys_id: gr.sys_id,
+		disc_golfer: gr.disc_golfer,
+		course: gr.course,
+		swings: gr.score		
+		};
+	}
+	
+	return null;
+})(env);]]></script>
+        <sys_class_name>sys_graphql_resolver</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2022-08-05 22:11:02</sys_created_on>
+        <sys_id>ceabc10fd9095110f87742f733a0b321</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>Score Resolver</sys_name>
+        <sys_package display_value="Disc Golf" source="x_snc_disc_golf">19cb2282c4305110f877205b7f4dd90c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Disc Golf">19cb2282c4305110f877205b7f4dd90c</sys_scope>
+        <sys_update_name>sys_graphql_resolver_ceabc10fd9095110f87742f733a0b321</sys_update_name>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2022-08-08 16:45:45</sys_updated_on>
+    </sys_graphql_resolver>
+</record_update>

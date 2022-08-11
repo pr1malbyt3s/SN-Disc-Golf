@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_graphql_resolver_mapping">
+    <sys_graphql_resolver_mapping action="INSERT_OR_UPDATE">
+        <path>Query:score</path>
+        <resolver display_value="Score Resolver">ceabc10fd9095110f87742f733a0b321</resolver>
+        <schema display_value="Disc Golf">aa8dfbb6d9055110f87742f733a0b3ec</schema>
+        <sys_class_name>sys_graphql_resolver_mapping</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2022-08-08 15:28:04</sys_created_on>
+        <sys_id>e28c0f3bd9891510f87742f733a0b3be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Disc Golf" source="x_snc_disc_golf">19cb2282c4305110f877205b7f4dd90c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Disc Golf">19cb2282c4305110f877205b7f4dd90c</sys_scope>
+        <sys_update_name>sys_graphql_resolver_mapping_e28c0f3bd9891510f87742f733a0b3be</sys_update_name>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2022-08-08 15:28:04</sys_updated_on>
+    </sys_graphql_resolver_mapping>
+</record_update>
